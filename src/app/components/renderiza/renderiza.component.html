@@ -1,0 +1,11 @@
+<ul class="pokemon-list">
+  <li *ngFor="let digimon of digimons" class="pokemon-card">
+    <div class="pokemon-image">
+      <img [src]="digimon.img" alt="{{ digimon.name }}">
+    </div>
+    <div class="pokemon-info">
+      <h2>{{ digimon.name }}</h2>
+      <p>Level: {{ digimon.level }}</p>
+    </div>
+  </li>
+</ul>
