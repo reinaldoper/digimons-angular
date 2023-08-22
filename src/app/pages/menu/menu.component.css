@@ -1,11 +1,13 @@
 .container_menu{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   height: 90px;
   padding: 20px;
   width: 100%;
-  background-color: #4180ab;
+  background: rgb(0,5,36);
+  background: linear-gradient(90deg, rgba(0,5,36,1) 11%, rgba(9,47,121,0.4430147058823529) 69%, rgba(0,212,255,1) 91%);
 }
 
 .container_menu > button {

@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { TDigimon } from './digimonType';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 
 @Injectable({
@@ -8,12 +10,15 @@ import { TDigimon } from './digimonType';
 export class DataSharingService {
   sharedArray: TDigimon[] = [];
   uniqueApi: TDigimon[] = [];
+  url: string = 'https://digimon-api.vercel.app/api/digimon'
+
+  constructor(private http: HttpClient) { }
 
   setUniqueApi(array: TDigimon[]) {
     this.uniqueApi = array;
   }
 
-  setAllApi(array: TDigimon[]){
+  setAllApi(array: TDigimon[]) {
     this.sharedArray = array;
   };
 
@@ -35,6 +40,7 @@ export class DataSharingService {
       console.error('Erro ao buscar dados:', error);
       return []
     }
+      
 
   }
 

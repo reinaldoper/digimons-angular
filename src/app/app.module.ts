@@ -7,6 +7,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { CarregandoComponent } from './pages/carregando/carregando.component';
 import { RenderizaComponent } from './components/renderiza/renderiza.component';
 import { MenuComponent } from './pages/menu/menu.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MenuComponent } from './pages/menu/menu.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
