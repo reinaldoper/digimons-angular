@@ -1,7 +1,7 @@
 
 <app-carregando *ngIf="disabled"></app-carregando>
 <ul class="pokemon-list">
-  <li *ngFor="let digimon of digimons" class="pokemon-card">
+  <li *ngFor="let digimon of digimons" class="pokemon-card {{digimon.level}}">
     <div class="pokemon-image">
       <img src={{digimon.img}} alt='{{ digimon.name }}'>
     </div>

@@ -3,6 +3,28 @@
   flex-wrap: wrap;
 }
 
+.Rookie{
+  background-color: lawngreen;
+}
+.Champion{
+  background-color: lightblue;
+}
+.Ultimate{
+  background-color: lightcoral;
+}
+.Fresh{
+  background-color: lightseagreen;
+}
+.Mega{
+  background-color: lightslategray;
+}
+.Training{
+  background-color: lime;
+}
+.Armor{
+  background-color: lightgoldenrodyellow;
+}
+
 .pokemon-card {
   list-style: none;
   border: 1px solid #ddd;
@@ -13,7 +35,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fff;
+  /* background-color: #fff; */
   margin: 16px;
 }
 
