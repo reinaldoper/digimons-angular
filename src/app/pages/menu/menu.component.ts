@@ -20,7 +20,7 @@ export class MenuComponent {
 
   clickList(){
     const result = this.api.getAllApi();
-    const response = result.filter(res => res.level === this.word);
+    const response = result.filter(res => res.level.toLowerCase() === this.word.toLowerCase());
     if(response.length > 0){
       this.api.setUniqueApi(response);
       this.word = '';
